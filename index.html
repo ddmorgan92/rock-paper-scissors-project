@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<head></head>
+<html>
+<head>
+</head>
 <body>
     <h1>Rock Paper Scissors!</h1>
     <select>
@@ -7,11 +9,16 @@
         <option>Paper</option>
         <option>Scissors</option>
     </select>
-    <button>
+    <button onclick = playRound()>
         1..2..3..Go!
     </button>
+    <h2 id = "results">Good Luck!</h2>
     <div>
-        <h2>Your Score : </h2>
-        <h2>Computer's Score : </h2>
+        <h2>Your Score : <span id = "player-score">0</span></h2>
+        <h2>Computer's Score : <span id = "computer-score">0</span></h2>
     </div>
+
 </body>
+    <script src = "script.js">
+    </script>
+</html>
