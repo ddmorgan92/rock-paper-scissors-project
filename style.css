@@ -5,7 +5,7 @@ body{
     align-content: center;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    background-image:url("background.jpeg");
+    background-image:url("images/background.jpeg");
     color:rgb(209, 84, 27);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -16,14 +16,10 @@ h1{
     font-size:5em;
 }
 
-select{
-    margin-top:1em;
-    width: 200px;
-    height:50px;
-    font-size:2em;
-    font-family:'ZCOOL KuaiLe', cursive !important;
-    color:rgb(209, 84, 27);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+input{
+    width:150px;
+    height:150px;
+    margin:0px 50px;
 }
 
 button{

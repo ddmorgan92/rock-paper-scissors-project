@@ -1,17 +1,17 @@
+const buttonSelection = document.querySelectorAll(".choice-selection input");
 let playerScore = 0;
 let computerScore = 0;
+
 
 function computerPlay() {
         const choices = ["Rock", "Paper", "Scissors"];
         return choices[Math.floor(Math.random()*choices.length)];
 }
     
-function playRound() {
-    const playerSelection = document.querySelector("select").value;
+function playRound(playerSelection, computerSelection) {
     const resultsContainer = document.querySelector("#results");
     const playerContainer = document.querySelector("#player-score");
     const computerContainer = document.querySelector("#computer-score");
-    const computerSelection = computerPlay();
 
         
     if (playerSelection === computerSelection){
@@ -28,3 +28,10 @@ function playRound() {
 
     console.log(playerSelection, computerSelection);
 }    
+
+buttonSelection.forEach( move => move.addEventListener("click",event => {
+        let playerSelection = event.target.name;
+        let computerSelection = computerPlay();
+        playRound(playerSelection,computerSelection);
+    })
+);
